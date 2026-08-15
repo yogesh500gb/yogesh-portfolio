@@ -1,0 +1,27 @@
+YOGESH PARAJULI PORTFOLIO - CPANEL UPLOAD GUIDE
+
+1. Keep the current live website online during setup.
+2. Open cPanel and then File Manager.
+3. Open the public_html folder.
+4. Make a backup of the existing public_html website files.
+5. Upload the files INSIDE this cpanel-site folder:
+   - index.html
+   - style.css
+   - script.js
+   - assets folder
+6. Confirm index.html is directly inside public_html.
+7. Open the domain in a private/incognito browser window.
+8. Test Home, About, Portfolio, Contact, mobile menu and contact form.
+9. Activate the FormSubmit email if an activation email arrives.
+
+DO NOT share your cPanel password, GitHub password, OTP or recovery codes.
+
+MAIN FILES FOR FUTURE CHANGES
+- index.html = text, links and sections
+- style.css = colours, sizes, spacing and responsive design
+- script.js = mobile menu and comments behaviour
+- assets/yogesh-photo.webp = profile photo
+- assets/yogesh-hero.lottie = hero animation
+
+COMMENTS NOTE
+The current comments save only in each visitor's own browser. A database is needed for shared public comments.
