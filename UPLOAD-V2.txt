@@ -1,0 +1,16 @@
+YOGESH PORTFOLIO V2 - UPLOAD GUIDE
+
+1. In GitHub, switch to branch: v2-redesign
+2. Unzip this package on your computer.
+3. In the v2-redesign branch, use Add file > Upload files.
+4. Upload ALL files and the assets folder from this package.
+5. Existing files with the same names should be replaced.
+6. Commit the upload to v2-redesign.
+7. Preview/test the branch before merging into main.
+
+Important:
+- GTM-MMSNKK67 is already preserved on every HTML page.
+- CNAME is preserved as parajuliyogesh.com.np.
+- The Results page uses the original supplied Meta/Google screenshots.
+- The calendar section currently sends a preferred date/time as a meeting REQUEST by email.
+  A live availability calendar can be connected later when you provide a Calendly/Cal.com/Google booking URL.
