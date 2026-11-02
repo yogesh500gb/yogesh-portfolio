@@ -1,992 +1,947 @@
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <title>Digital Marketing Agency in Nepal | ARAT</title>
-  <meta name="description" content="ARAT is a founder-led digital marketing brand in Nepal, specialising in Google Ads, Meta Ads, TikTok Ads and performance marketing for growing businesses.">
-  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="description" content="ARAT is a founder-led digital marketing agency in Nepal offering Google Ads, Meta Ads, TikTok Ads, SEO, social media, design, websites and analytics.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#f4f9ff">
   <link rel="canonical" href="https://parajuliyogesh.com.np/">
-  <meta name="theme-color" content="#f7fbff">
-
   <meta property="og:type" content="website">
-  <meta property="og:title" content="ARAT | Digital Marketing & Growth">
-  <meta property="og:description" content="Smarter strategy. More meaningful growth. Discover performance marketing by ARAT, founded by Yogesh Parajuli.">
+  <meta property="og:site_name" content="ARAT">
+  <meta property="og:title" content="ARAT | Digital Marketing Agency in Nepal">
+  <meta property="og:description" content="Thoughtful ideas, effective digital experiences and marketing that connects creativity with measurable progress.">
   <meta property="og:url" content="https://parajuliyogesh.com.np/">
-
+  <meta name="twitter:card" content="summary">
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "ARAT",
-    "url": "https://parajuliyogesh.com.np/",
-    "description": "Founder-led digital marketing and performance advertising brand in Nepal.",
-    "founder": {
-      "@type": "Person",
-      "name": "Yogesh Parajuli"
-    },
-    "areaServed": ["Nepal"],
-    "knowsAbout": [
-      "Google Ads",
-      "Meta Ads",
-      "TikTok Ads",
-      "Performance Marketing",
-      "Marketing Analytics"
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"Organization",
+        "@id":"https://parajuliyogesh.com.np/#organization",
+        "name":"ARAT",
+        "url":"https://parajuliyogesh.com.np/",
+        "founder":{"@type":"Person","name":"Yogesh Parajuli"},
+        "description":"Founder-led digital marketing, website, creative and analytics services in Nepal"
+      },
+      {
+        "@type":"WebSite",
+        "@id":"https://parajuliyogesh.com.np/#website",
+        "name":"ARAT",
+        "url":"https://parajuliyogesh.com.np/",
+        "publisher":{"@id":"https://parajuliyogesh.com.np/#organization"}
+      }
     ]
   }
   </script>
-
   <style>
     :root {
-      --blue: #2563eb;
-      --blue-dark: #174cc5;
-      --navy: #182d4c;
-      --muted: #5d7189;
-      --sky: #eaf5ff;
-      --mint: #e4f8f1;
-      --peach: #fff0df;
-      --border: #dce8f5;
-      --white: #ffffff;
+      --navy:#152e4d;
+      --blue:#2467df;
+      --deep:#164aaf;
+      --muted:#56718d;
+      --line:#d6e6f4;
+      --sky:#edf6ff;
+      --mint:#e8f8f0;
+      --peach:#fff1e6;
+      --cream:#fffefa;
+      --white:#fff;
     }
-
-    * { box-sizing: border-box; }
-
-    html { scroll-behavior: smooth; }
-
+    *,*::before,*::after { box-sizing:border-box; }
+    html { scroll-behavior:smooth; scroll-padding-top:100px; }
     body {
-      margin: 0;
-      background: #f8fbff;
-      color: var(--navy);
-      font-family: Inter, "Segoe UI", Arial, sans-serif;
-      line-height: 1.6;
+      margin:0;
+      background:var(--cream);
+      color:var(--navy);
+      font:16px/1.65 "Segoe UI",Arial,sans-serif;
     }
-
-    a { color: inherit; text-decoration: none; }
-    button, input, textarea { font: inherit; }
-    button { cursor: pointer; }
-    section { scroll-margin-top: 95px; }
-
-    .container {
-      width: min(1160px, 91%);
-      margin: auto;
+    a { color:inherit; text-decoration:none; }
+    button { font:inherit; cursor:pointer; }
+    h1,h2,h3,p { margin-top:0; }
+    h1,h2,h3 { letter-spacing:-.045em; line-height:1.14; }
+    p { color:var(--muted); }
+    a:focus-visible,button:focus-visible,summary:focus-visible {
+      outline:3px solid #f8a966; outline-offset:4px;
     }
-
-    .skip-link {
-      position: absolute;
-      left: 12px;
-      top: -80px;
-      background: var(--navy);
-      color: white;
-      padding: 12px;
-      z-index: 100;
+    .wrap { width:min(1160px,calc(100% - 44px)); margin:auto; }
+    .skip {
+      position:absolute;top:-70px;left:10px;padding:10px;
+      background:var(--navy);color:white;z-index:99;
     }
-
-    .skip-link:focus { top: 12px; }
-
-    .topbar {
-      text-align: center;
-      background: #e8f3ff;
-      color: #355c88;
-      padding: 9px 15px;
-      font-size: 12px;
-      font-weight: 600;
+    .skip:focus { top:8px; }
+    .bar {
+      background:#e7f3ff;text-align:center;color:#245488;
+      padding:9px;font-size:12px;font-weight:700;
     }
-
     header {
-      position: sticky;
-      top: 0;
-      z-index: 20;
-      background: rgba(255,255,255,.96);
-      border-bottom: 1px solid var(--border);
-      backdrop-filter: blur(14px);
+      position:sticky;top:0;z-index:30;
+      background:#fffffff0;backdrop-filter:blur(12px);
+      border-bottom:1px solid var(--line);
     }
-
-    .navbar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      min-height: 78px;
-      gap: 20px;
+    .nav {
+      min-height:76px;display:flex;align-items:center;
+      justify-content:space-between;gap:20px;
     }
-
     .logo {
-      font-size: 30px;
-      font-weight: 900;
-      letter-spacing: -2px;
-      color: var(--navy);
+      display:inline-flex;gap:10px;align-items:center;
+      font-size:27px;font-weight:900;letter-spacing:-.065em;
     }
-
-    .logo span { color: var(--blue); }
-
+    .logo b { color:var(--blue); }
+    .mark {
+      display:grid;grid-template-columns:repeat(2,12px);
+      gap:4px;transform:rotate(-15deg);
+    }
+    .mark i {
+      width:12px;height:12px;border-radius:4px;
+      background:#2467df;
+    }
+    .mark i:nth-child(2){background:#7bbaf5}
+    .mark i:nth-child(3){background:#75d1ae}
+    .mark i:nth-child(4){background:#4d84dc}
     .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 28px;
-      font-size: 14px;
-      font-weight: 600;
+      display:flex;align-items:center;gap:25px;
+      font-size:13px;font-weight:700;
     }
-
-    .nav-links a:hover { color: var(--blue); }
-
+    .nav-links a:hover{color:var(--blue)}
     .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      padding: 15px 24px;
-      background: var(--blue);
-      color: white;
-      border: 1px solid var(--blue);
-      border-radius: 12px;
-      font-weight: 700;
-      font-size: 14px;
-      transition: .2s ease;
+      display:inline-flex;align-items:center;justify-content:center;
+      min-height:48px;gap:8px;padding:12px 21px;
+      border:1px solid var(--blue);border-radius:11px;
+      background:var(--blue);color:white;
+      font-size:14px;font-weight:700;
+      transition:transform .2s,background .2s;
     }
-
     .btn:hover {
-      background: var(--blue-dark);
-      transform: translateY(-2px);
+      background:var(--deep);transform:translateY(-2px);
     }
-
-    .btn-outline {
-      background: white;
-      color: var(--blue);
-      border-color: #bad2f5;
+    .btn.light {
+      background:white;border-color:#bfd6f4;color:var(--deep);
     }
-
-    .btn-outline:hover {
-      background: var(--sky);
-      color: var(--blue-dark);
+    .btn.light:hover{background:#edf6ff}
+    .menu {
+      display:none;padding:8px 13px;border-radius:9px;
+      background:#eaf3ff;border:1px solid var(--line);
+      color:var(--navy);font-size:23px;
     }
-
-    .menu-button {
-      display: none;
-      background: white;
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 8px 13px;
-      color: var(--navy);
-      font-size: 22px;
-    }
-
+    .mobile-nav { display:none; }
+    .mobile-nav.open { display:grid; }
+    .mobile-nav a { padding:10px 0;font-weight:700; }
     .hero {
-      position: relative;
-      overflow: hidden;
-      background: linear-gradient(135deg, #f7fbff, #e7f4ff 70%, #ebfcf7);
-      padding: 106px 0 100px;
+      background:
+        radial-gradient(ellipse at 78% 28%,#d9edff 0,transparent 58%),
+        radial-gradient(ellipse at 3% 92%,#fff0e7 0,transparent 40%),
+        linear-gradient(140deg,#fffefa,#f5fbff);
+      overflow:hidden;padding:102px 0 0;
     }
-
-    .hero::before {
-      content: "";
-      position: absolute;
-      width: 350px;
-      height: 350px;
-      right: -90px;
-      top: -130px;
-      background: #cfe5ff;
-      border-radius: 50%;
-      filter: blur(35px);
-      opacity: .65;
-    }
-
     .hero-grid {
-      position: relative;
-      display: grid;
-      grid-template-columns: 1.15fr 1fr;
-      align-items: center;
-      gap: 65px;
+      display:grid;grid-template-columns:1.06fr .94fr;
+      align-items:center;gap:60px;
     }
-
     .eyebrow {
-      display: inline-block;
-      font-size: 12px;
-      font-weight: 800;
-      letter-spacing: 1.7px;
-      text-transform: uppercase;
-      color: var(--blue);
-      margin-bottom: 17px;
+      display:inline-block;margin-bottom:16px;color:var(--blue);
+      font-size:11px;font-weight:800;
+      letter-spacing:.17em;text-transform:uppercase;
     }
-
-    .pill {
-      background: white;
-      padding: 9px 15px;
-      border: 1px solid #d1e5ff;
-      border-radius: 40px;
-      letter-spacing: .8px;
+    .eyebrow.pill {
+      padding:10px 14px;border-radius:50px;
+      border:1px solid #c9dff7;background:#e7f3ff;
     }
-
-    h1, h2, h3, p { margin-top: 0; }
-
     h1 {
-      font-size: clamp(44px, 5.5vw, 75px);
-      line-height: 1.09;
-      letter-spacing: -3.5px;
-      font-weight: 850;
-      margin-bottom: 25px;
+      font-size:clamp(46px,5.6vw,73px);
+      line-height:1.06;margin-bottom:25px;
     }
-
-    h1 span { color: var(--blue); }
-
-    .lead {
-      color: var(--muted);
-      font-size: 18px;
-      max-width: 590px;
-      line-height: 1.8;
+    h1 em { font-style:normal;color:var(--blue); }
+    .hero p {
+      font-size:17px;line-height:1.85;max-width:570px;
     }
-
-    .hero-actions {
-      display: flex;
-      gap: 13px;
-      flex-wrap: wrap;
-      margin-top: 30px;
+    .actions {
+      display:flex;gap:12px;flex-wrap:wrap;margin:28px 0 23px;
     }
-
-    .small-note {
-      margin-top: 28px;
-      font-size: 13px;
-      color: #6c7f94;
+    .micro { color:#5c7894;font-size:12px!important; }
+    .dash {
+      border:1px solid #d8e6f5;border-radius:24px;
+      background:white;box-shadow:0 26px 70px #2c6fb31d;
+      padding:25px;transform:rotate(-2deg);
     }
-
-    .visual {
-      background: white;
-      padding: 24px;
-      border: 1px solid #d9e8f9;
-      border-radius: 24px;
-      box-shadow: 0 30px 75px rgba(34,96,167,.12);
-      transform: rotate(-2deg);
+    .dash-head {
+      display:flex;justify-content:space-between;gap:10px;
+      color:#3f6a96;font-size:12px;font-weight:800;
+      border-bottom:1px solid #e7f0f7;
+      padding-bottom:17px;margin-bottom:20px;
     }
-
-    .visual-top {
-      display: flex;
-      justify-content: space-between;
-      gap: 15px;
-      margin-bottom: 25px;
-      font-size: 12px;
-      font-weight: 800;
-      color: var(--blue);
-    }
-
-    .visual h3 {
-      font-size: 25px;
-      line-height: 1.3;
-      letter-spacing: -.8px;
-      margin-bottom: 8px;
-    }
-
-    .visual p { color: var(--muted); font-size: 13px; }
-
+    .dash h3 { font-size:27px;margin-bottom:8px; }
+    .dash p{font-size:13px;margin:0;}
     .chart {
-      height: 185px;
-      background: #f5faff;
-      border-radius: 15px;
-      padding: 15px;
-      margin: 22px 0;
+      background:#f5faff;border-radius:16px;
+      margin:20px 0;padding:10px;height:190px;
     }
-
-    .chart svg { width: 100%; height: 100%; }
-
-    .visual-stats {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 9px;
+    .chart svg{width:100%;height:100%;}
+    .dash-metrics {
+      display:grid;grid-template-columns:repeat(3,1fr);gap:9px;
     }
-
-    .mini-card {
-      background: var(--sky);
-      border-radius: 10px;
-      padding: 14px 11px;
+    .dash-metrics span {
+      background:#e7f3ff;padding:12px;border-radius:10px;
+      color:#325a82;font-size:11px;
     }
-
-    .mini-card:nth-child(2) { background: var(--mint); }
-    .mini-card:nth-child(3) { background: var(--peach); }
-
-    .mini-card strong {
-      display: block;
-      font-size: 13px;
+    .dash-metrics span:nth-child(2){background:var(--mint)}
+    .dash-metrics span:nth-child(3){background:var(--peach)}
+    .dash-metrics strong {
+      display:block;font-size:13px;color:var(--navy);
     }
-
-    .mini-card span {
-      font-size: 11px;
-      color: var(--muted);
+    .strip {
+      border-top:1px solid #d7e9f8;
+      display:flex;align-items:center;
+      justify-content:space-between;flex-wrap:wrap;
+      gap:20px;padding:24px 0;margin-top:80px;
+      color:#476785;font-size:12px;
     }
-
-    .section { padding: 98px 0; }
-    .white { background: white; }
-    .blue-section { background: #eef7ff; }
-
-    .section-heading {
-      max-width: 720px;
-      margin-bottom: 42px;
+    .strip strong {
+      font-size:12px;letter-spacing:.06em;color:#25538a;
     }
-
-    h2 {
-      font-size: clamp(31px, 4vw, 48px);
-      line-height: 1.17;
-      letter-spacing: -1.8px;
-      margin-bottom: 18px;
+    .section { padding:95px 0; }
+    .section.white{background:white}
+    .section.sky{background:#eef7ff}
+    .section.mint{background:#f1faf4}
+    .section.warm{background:#fffaf5}
+    .heading { max-width:770px;margin-bottom:40px; }
+    .heading.center{text-align:center;margin-inline:auto;}
+    .heading h2 {
+      font-size:clamp(32px,4vw,46px);margin:0 0 15px;
     }
-
-    .section-heading p {
-      color: var(--muted);
-      font-size: 16px;
+    .heading p{font-size:16px;}
+    .grid {
+      display:grid;grid-template-columns:repeat(3,1fr);gap:18px;
     }
-
-    .grid-3 {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-    }
-
     .card {
-      background: white;
-      padding: 31px;
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      transition: .2s ease;
+      background:white;border:1px solid var(--line);
+      border-radius:18px;padding:28px;
+      box-shadow:0 12px 35px #22589906;
     }
-
-    .card:hover {
-      transform: translateY(-5px);
-      border-color: #a9cbfb;
-      box-shadow: 0 18px 40px rgba(36,99,170,.08);
+    .card h3{font-size:19px;margin-bottom:11px;}
+    .card p{font-size:14px;margin-bottom:0}
+    .card.peach{background:#fff7f0}
+    .card.mint{background:#f3faf5}
+    .card.blue{background:#f4f9ff}
+    .service-group{margin:40px 0}
+    .group-title{font-size:21px;margin:0 0 17px}
+    .group-title span {
+      color:var(--blue);font-size:13px;margin-right:9px;
     }
-
-    .card-icon {
-      display: grid;
-      place-items: center;
-      width: 53px;
-      height: 53px;
-      border-radius: 15px;
-      background: #e6f1ff;
-      color: var(--blue);
-      font-weight: 850;
-      font-size: 20px;
-      margin-bottom: 27px;
+    .service-card {
+      display:flex;flex-direction:column;gap:12px;min-height:218px;
     }
-
-    .card:nth-child(3n+2) .card-icon { background: var(--mint); color: #087d68; }
-    .card:nth-child(3n+3) .card-icon { background: var(--peach); color: #a65a20; }
-
-    .card h3 { font-size: 20px; margin-bottom: 10px; }
-    .card p { color: var(--muted); font-size: 14px; }
-
-    .text-link {
-      color: var(--blue);
-      font-weight: 750;
-      font-size: 14px;
+    .service-card h3,.service-card p{margin:0}
+    .service-card a {
+      margin-top:auto;color:#1d61c8;
+      font-weight:800;font-size:13px;
     }
-
+    .icon-square {
+      display:grid;place-items:center;width:49px;height:49px;
+      border-radius:14px;background:#e7f2ff;color:#1a63d2;
+      font-size:19px;font-weight:900;margin-bottom:7px;
+    }
+    .service-card:nth-child(3n+2) .icon-square {
+      background:#e5f7ec;color:#157969;
+    }
+    .service-card:nth-child(3n+3) .icon-square {
+      background:#ffeddf;color:#a86134;
+    }
+    .wide-note {
+      background:linear-gradient(120deg,#e4f2ff,#ebf8f2);
+      border:1px solid #cfe6f3;border-radius:17px;
+      padding:25px;display:flex;align-items:center;
+      justify-content:space-between;gap:18px;
+    }
+    .wide-note p{margin:0;font-size:14px}
+    .platform-grid {
+      display:grid;grid-template-columns:repeat(3,1fr);gap:18px;
+    }
+    .platform {
+      overflow:hidden;background:white;
+      border:1px solid #d7e5ed;border-radius:22px;
+      box-shadow:0 18px 35px #2b71930c;
+    }
+    .platform-top {
+      height:135px;display:grid;place-items:center;
+      background:#e8f3ff;
+    }
+    .platform:nth-child(2) .platform-top{background:#e7f8f1}
+    .platform:nth-child(3) .platform-top{background:#fff0e6}
+    .platform:nth-child(4) .platform-top{background:#edf1ff}
+    .platform:nth-child(5) .platform-top{background:#e7f8f1}
+    .platform:nth-child(6) .platform-top{background:#fff3e7}
+    .platform-logo {
+      font-size:33px;font-weight:850;letter-spacing:-.055em;
+    }
+    .platform-logo small {
+      display:block;font-size:11px;letter-spacing:.15em;
+      text-align:center;color:#5d728b;
+    }
+    .platform:nth-child(1) .platform-logo{color:#2f68be}
+    .platform:nth-child(2) .platform-logo{color:#176de0}
+    .platform:nth-child(3) .platform-logo{color:#1c2941}
+    .platform:nth-child(4) .platform-logo{color:#e59d33}
+    .platform:nth-child(5) .platform-logo{color:#168671}
+    .platform:nth-child(6) .platform-logo{color:#a96e2e}
+    .platform-info{padding:22px}
+    .platform-info b {
+      font-size:10px;letter-spacing:.13em;color:#2372c4;
+    }
+    .platform-info h3{font-size:18px;margin:8px 0}
+    .platform-info p{font-size:13px;margin:0}
+    .disclaimer {
+      font-size:12px;color:#658098;margin:22px 0 0;
+    }
     .split {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
-      gap: 65px;
+      display:grid;grid-template-columns:1fr 1fr;
+      gap:65px;align-items:center;
     }
-
-    .soft-panel {
-      background: linear-gradient(135deg, #e5f3ff, #ebfbf6);
-      padding: 42px;
-      border-radius: 25px;
-      border: 1px solid #d5e9f9;
+    .split h2{font-size:clamp(30px,3.7vw,45px)}
+    .split p{font-size:16px}
+    .list{display:grid;gap:12px}
+    .list-item {
+      padding:20px;background:white;border-radius:15px;
+      border:1px solid var(--line);
     }
-
-    .soft-panel h3 { font-size: 27px; line-height: 1.3; }
-    .soft-panel p { color: var(--muted); }
-
-    .check-row {
-      padding: 12px 0;
-      border-bottom: 1px solid #ccdfef;
-      font-size: 14px;
-      font-weight: 600;
+    .list-item strong{display:block;margin-bottom:5px}
+    .list-item p{margin:0;font-size:13px}
+    .number {
+      color:#2b6dd9;font-size:12px;
+      font-weight:900;margin-bottom:15px;
     }
-
-    .check-row:last-child { border: 0; }
-
-    .step-number {
-      color: var(--blue);
-      font-weight: 850;
-      font-size: 13px;
-      margin-bottom: 14px;
+    .case {
+      display:grid;grid-template-columns:1fr 1fr;gap:30px;
+      padding:40px;border:1px solid #d5e8f4;
+      border-radius:24px;
+      background:linear-gradient(120deg,#e8f4ff,#eaf9f3);
     }
-
-    .founder-box {
-      background: var(--navy);
-      color: white;
-      padding: 55px;
-      border-radius: 26px;
+    .case h3{font-size:29px}
+    .case ul {
+      margin:0;padding-left:19px;line-height:2.2;
+      color:#2d597b;font-weight:600;font-size:14px;
     }
-
-    .founder-box p { color: #d5e3f2; }
-
-    .founder-box .eyebrow { color: #acd2ff; }
-
-    .faq {
-      border-bottom: 1px solid var(--border);
-      padding: 21px 0;
+    .tags{display:flex;flex-wrap:wrap;gap:9px}
+    .tags span {
+      padding:12px 17px;background:white;
+      border:1px solid #cfe2f4;border-radius:50px;
+      color:#346184;font-weight:700;font-size:13px;
     }
-
+    .steps {
+      display:grid;grid-template-columns:repeat(4,1fr);gap:14px;
+    }
+    .step {
+      padding:27px;background:white;border-radius:18px;
+      border:1px solid var(--line);
+    }
+    .step .number{margin-bottom:30px}
+    .step h3{font-size:18px;margin-bottom:7px}
+    .step p{font-size:13px;margin:0}
+    .founder {
+      background:linear-gradient(125deg,#e8f4ff,#edf9f2);
+      border:1px solid #d6e8f3;border-radius:24px;
+      padding:42px;display:grid;
+      grid-template-columns:210px 1fr;gap:50px;align-items:center;
+    }
+    .monogram {
+      height:220px;border-radius:20px;
+      background:linear-gradient(135deg,#cfe6ff,#b6d6fa,#bff0d8);
+      display:grid;place-items:center;color:#2e68a9;
+      font-size:75px;font-weight:900;letter-spacing:-.09em;
+    }
+    .founder h2{font-size:37px}
+    .founder p{font-size:15px}
+    .faq{border-bottom:1px solid var(--line)}
+    .faq:first-of-type{border-top:1px solid var(--line)}
     .faq summary {
-      font-weight: 750;
-      font-size: 17px;
-      cursor: pointer;
+      cursor:pointer;list-style:none;
+      font-weight:750;padding:22px 0;
     }
-
-    .faq p {
-      color: var(--muted);
-      margin: 15px 0 0;
-      font-size: 15px;
+    .faq summary::-webkit-details-marker{display:none}
+    .faq summary::after {
+      content:'+';float:right;color:var(--blue);font-size:22px;
     }
-
+    .faq[open] summary::after{content:'−'}
+    .faq p{font-size:14px;padding:0 10px 20px;margin:0}
     .cta {
-      background: linear-gradient(110deg, #1b52c4, #3085e8);
-      color: white;
-      padding: 62px;
-      border-radius: 26px;
+      padding:55px;border-radius:25px;
+      background:linear-gradient(110deg,#2357c2,#3989e7);
+      display:flex;align-items:center;
+      justify-content:space-between;gap:35px;color:white;
     }
-
-    .cta h2 { max-width: 650px; }
-    .cta p { color: #e1eeff; max-width: 620px; }
-
+    .cta h2{font-size:38px}
+    .cta p{color:#e5f1ff}
     .cta .btn {
-      background: white;
-      color: var(--blue-dark);
-      border-color: white;
+      background:white;color:var(--deep);
+      border-color:white;white-space:nowrap;
     }
-
-    .cta .btn:hover { background: #eaf5ff; }
-
     footer {
-      background: #f1f6fc;
-      border-top: 1px solid var(--border);
-      padding: 45px 0 25px;
+      background:#edf6fd;border-top:1px solid #d6e7f6;
+      padding:56px 0 20px;
     }
-
     .footer-grid {
-      display: flex;
-      justify-content: space-between;
-      gap: 30px;
-      flex-wrap: wrap;
+      display:grid;grid-template-columns:2fr 1fr 1fr;gap:45px;
     }
-
-    footer p {
-      color: var(--muted);
-      max-width: 400px;
-      font-size: 14px;
+    .footer-grid h3{font-size:15px}
+    .footer-grid a:not(.logo) {
+      display:block;color:#4d6b87;
+      font-size:14px;margin-bottom:10px;
     }
-
-    .footer-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      font-size: 14px;
+    .footer-grid p{font-size:14px;max-width:390px}
+    .foot-bottom {
+      margin-top:35px;border-top:1px solid #cfe1f2;
+      padding-top:20px;color:#72839a;font-size:12px;
     }
-
-    .copyright {
-      margin-top: 35px;
-      padding-top: 20px;
-      border-top: 1px solid var(--border);
-      color: var(--muted);
-      font-size: 12px;
+    @media(max-width:960px){
+      .nav-links,.nav-cta{display:none}
+      .menu{display:block}
+      .mobile-nav.open{padding:12px 0 20px}
+      .hero-grid,.split,.case{grid-template-columns:1fr}
+      .dash{max-width:620px;margin:auto;transform:none}
+      .hero-grid{gap:35px}
+      .platform-grid,.grid{grid-template-columns:repeat(2,1fr)}
+      .steps{grid-template-columns:repeat(2,1fr)}
+      .footer-grid{grid-template-columns:1.6fr 1fr 1fr}
     }
-
-    @media (max-width: 900px) {
-      .hero-grid, .split { grid-template-columns: 1fr; }
-      .grid-3 { grid-template-columns: repeat(2, 1fr); }
-      .hero { padding: 75px 0; }
-      .visual { transform: none; max-width: 600px; }
-      .menu-button { display: block; }
-      .nav-cta { display: none; }
-
-      .nav-links {
-        display: none;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 78px;
-        background: white;
-        padding: 25px 5%;
-        flex-direction: column;
-        align-items: flex-start;
-        border-bottom: 1px solid var(--border);
-      }
-
-      .nav-links.open { display: flex; }
+    @media(max-width:640px){
+      .wrap{width:calc(100% - 34px)}
+      .hero{padding-top:55px}
+      .hero h1{font-size:48px}
+      .hero p{font-size:15px}
+      .actions .btn{flex:1}
+      .dash{padding:17px}
+      .chart{height:145px}
+      .dash-metrics span{padding:9px;font-size:10px}
+      .dash-metrics strong{font-size:11px}
+      .strip{margin-top:45px}
+      .section{padding:68px 0}
+      .heading p{font-size:14px}
+      .grid,.platform-grid,.steps{grid-template-columns:1fr}
+      .platform-top{height:120px}
+      .wide-note,.cta{flex-direction:column;align-items:start}
+      .case{padding:26px}
+      .founder{grid-template-columns:1fr;padding:26px}
+      .monogram{height:160px}
+      .cta{padding:32px 25px}
+      .cta .btn{width:100%}
+      .footer-grid{grid-template-columns:1fr 1fr}
+      .footer-grid>div:first-child{grid-column:1/3}
     }
-
-    @media (max-width: 600px) {
-      .grid-3 { grid-template-columns: 1fr; }
-      .section { padding: 70px 0; }
-      h1 { letter-spacing: -2px; }
-      .lead { font-size: 16px; }
-      .visual { padding: 18px; }
-      .mini-card { padding: 10px 7px; }
-      .mini-card strong { font-size: 11px; }
-      .soft-panel, .founder-box { padding: 28px; }
-      .cta { padding: 35px 26px; }
-      .hero-actions .btn { width: 100%; }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      html { scroll-behavior: auto; }
-      .btn, .card { transition: none; }
+    @media(prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}
+      .btn{transition:none}
     }
   </style>
 </head>
-
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+<a href="#main" class="skip">Skip to content</a>
+<div class="bar">Made in Nepal · Built for businesses with bigger ambitions</div>
 
-  <div class="topbar">
-    Built in Nepal. Thinking beyond borders.
+<header>
+  <div class="wrap nav">
+    <a href="#home" class="logo" aria-label="ARAT home">
+      <span class="mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>ARAT<b>.</b>
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#platforms">Expertise</a>
+      <a href="#work">Our work</a>
+      <a href="#about">About</a>
+      <a href="#faq">FAQs</a>
+    </nav>
+    <a class="btn nav-cta" href="contact.html">Let's talk ↗</a>
+    <button type="button" class="menu" id="menuButton" aria-controls="mobileNav" aria-expanded="false" aria-label="Open menu">☰</button>
   </div>
+  <nav class="wrap mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#platforms">Expertise</a>
+    <a href="#work">Our work</a>
+    <a href="#about">About</a>
+    <a href="#faq">FAQs</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
-  <header>
-    <div class="container navbar">
-      <a class="logo" href="#home" aria-label="ARAT home">
-        ARAT<span>.</span>
-      </a>
+<main id="main">
 
-      <nav class="nav-links" id="navigation" aria-label="Main navigation">
-        <a href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="#work">Our Approach</a>
-        <a href="#about">About</a>
-        <a href="#faq">FAQs</a>
-        <a href="#contact">Contact</a>
-      </nav>
-
-      <a href="#contact" class="btn nav-cta">Let's Talk ↗</a>
-
-      <button class="menu-button" id="menuButton"
-              aria-label="Open menu"
-              aria-controls="navigation"
-              aria-expanded="false">
-        ☰
-      </button>
-    </div>
-  </header>
-
-  <main id="main">
-
-    <!-- HERO -->
-    <section class="hero" id="home">
-      <div class="container hero-grid">
-
-        <div>
-          <div class="eyebrow pill">
-            DIGITAL MARKETING IN NEPAL & BEYOND
-          </div>
-
-          <h1>
-            Better ideas.<br>
-            <span>Brighter growth.</span>
-          </h1>
-
-          <p class="lead">
-            ARAT helps ambitious businesses connect the dots between
-            strategy, advertising and measurable growth. From Google
-            Ads to Meta and TikTok, we focus on reaching the right
-            people and making every marketing decision count.
-          </p>
-
-          <div class="hero-actions">
-            <a class="btn" href="#contact">Discuss Your Project ↗</a>
-            <a class="btn btn-outline" href="#services">Explore Our Services</a>
-          </div>
-
-          <p class="small-note">
-            Founder-led by Yogesh Parajuli · Performance Marketing & Analytics
-          </p>
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow pill">Digital marketing agency in Nepal</span>
+        <h1>Great ideas.<br><em>Better digital</em><br>growth.</h1>
+        <p>ARAT brings together digital strategy, paid advertising, SEO, social media, creative design and website development to help ambitious businesses in Nepal and beyond grow with purpose.</p>
+        <div class="actions">
+          <a class="btn" href="contact.html">Discuss your project ↗</a>
+          <a class="btn light" href="#services">Explore our services ↗</a>
         </div>
-
-        <div class="visual">
-          <div class="visual-top">
-            <span>ARAT / GROWTH STUDIO</span>
-            <span>● STRATEGY FIRST</span>
-          </div>
-
-          <h3>From insight to impact.</h3>
-          <p>Smarter planning. Thoughtful testing. Clearer decisions.</p>
-
-          <div class="chart">
-            <svg viewBox="0 0 420 170" role="img"
-                 aria-label="Illustrative upward trend showing the marketing improvement process">
-              <defs>
-                <linearGradient id="chartFill" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stop-color="#93c5fd" stop-opacity=".5"/>
-                  <stop offset="100%" stop-color="#93c5fd" stop-opacity="0"/>
-                </linearGradient>
-              </defs>
-
-              <path d="M5 145 H415 M5 100 H415 M5 55 H415"
-                    fill="none" stroke="#dbe8f7" stroke-dasharray="5 6"/>
-
-              <path d="M5 143 C55 135 65 153 110 115 S170 120 210 90
-                       S280 98 325 53 S385 55 415 18
-                       V170 H5 Z"
-                    fill="url(#chartFill)"/>
-
-              <path d="M5 143 C55 135 65 153 110 115 S170 120 210 90
-                       S280 98 325 53 S385 55 415 18"
-                    fill="none" stroke="#2563eb"
-                    stroke-width="5" stroke-linecap="round"/>
-
-              <path d="M5 155 C60 148 90 150 130 135 S215 142 260 105
-                       S355 115 415 78"
-                    fill="none" stroke="#4abfa7"
-                    stroke-width="4" stroke-linecap="round"/>
-            </svg>
-          </div>
-
-          <div class="visual-stats">
-            <div class="mini-card">
-              <strong>Discover</strong>
-              <span>Understand intent</span>
-            </div>
-            <div class="mini-card">
-              <strong>Optimise</strong>
-              <span>Improve campaigns</span>
-            </div>
-            <div class="mini-card">
-              <strong>Measure</strong>
-              <span>Focus on outcomes</span>
-            </div>
-          </div>
-
-          <p class="small-note">
-            Illustrative visual, not actual campaign performance.
-          </p>
-        </div>
-
+        <p class="micro">Founder-led by Yogesh Parajuli · Practical, data-aware marketing</p>
       </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section class="section white" id="services">
-      <div class="container">
-
-        <div class="section-heading">
-          <span class="eyebrow">WHAT WE DO</span>
-          <h2>Digital marketing built around your business.</h2>
-          <p>
-            There is no single marketing formula that works for everyone.
-            We combine the right platforms, creative thinking and practical
-            measurement to build a strategy that fits your goals.
-          </p>
+      <div class="dash" aria-label="Concept illustration of ARAT's marketing workflow">
+        <div class="dash-head">
+          <span>ARAT / Growth workspace</span><span>● ● ●</span>
         </div>
+        <h3>From thinking to traction.</h3>
+        <p>A joined-up approach to modern marketing.</p>
+        <div class="chart">
+          <svg role="img" aria-label="Illustrative upward lines, not real campaign data" viewBox="0 0 420 180">
+            <path d="M0 150H420M0 100H420M0 50H420" fill="none" stroke="#dae8f6" stroke-dasharray="5 6"/>
+            <path d="M5 155 C60 152 73 129 115 134 S179 91 228 97 S292 64 330 67 S381 34 414 23" stroke="#2c78ea" stroke-width="5" fill="none" stroke-linecap="round"/>
+            <path d="M5 158 C65 149 90 155 132 138 S196 143 240 108 S306 117 347 85 S385 90 414 62" stroke="#60c7a5" stroke-width="4" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="dash-metrics">
+          <span><strong>Discover</strong>Know the audience</span>
+          <span><strong>Create</strong>Build with purpose</span>
+          <span><strong>Measure</strong>Learn and improve</span>
+        </div>
+        <p class="micro">Concept illustration — not actual campaign results.</p>
+      </div>
+    </div>
+    <div class="wrap strip">
+      <span>Capabilities across the full digital journey</span>
+      <strong>GOOGLE ADS &nbsp; META ADS &nbsp; TIKTOK ADS &nbsp; SEO &nbsp; BRANDING &nbsp; WEB</strong>
+    </div>
+  </section>
 
-        <div class="grid-3">
+  <section class="section sky" id="challenges">
+    <div class="wrap">
+      <div class="heading">
+        <span class="eyebrow">Your challenges, our starting point</span>
+        <h2>Good marketing begins with the right problem.</h2>
+        <p>Before recommending a platform or a new campaign, we look at what your business actually needs.</p>
+      </div>
+      <div class="grid">
+        <article class="card blue">
+          <span class="number">01 / VISIBILITY</span>
+          <h3>The right customers aren't finding you.</h3>
+          <p>We examine how people search, discover and compare your brand online.</p>
+        </article>
+        <article class="card mint">
+          <span class="number">02 / EXPERIENCE</span>
+          <h3>Attention isn't becoming enquiries.</h3>
+          <p>We look at what happens after the click — the message, page and next step.</p>
+        </article>
+        <article class="card peach">
+          <span class="number">03 / CLARITY</span>
+          <h3>You're spending without a clear picture.</h3>
+          <p>We connect reporting with the business actions that really matter.</p>
+        </article>
+      </div>
+    </div>
+  </section>
 
-          <article class="card">
-            <div class="card-icon">G</div>
+  <section class="section white" id="services">
+    <div class="wrap">
+      <div class="heading">
+        <span class="eyebrow">What ARAT does</span>
+        <h2>One connected approach. Ten ways to make progress.</h2>
+        <p>From advertising to organic discovery, websites and brand experiences, our services support different stages of the customer journey.</p>
+      </div>
+
+      <div class="service-group">
+        <h3 class="group-title"><span>01 /</span> Paid media and performance</h3>
+        <div class="grid">
+          <article class="card service-card">
+            <div class="icon-square">G</div>
+            <h3>Google Ads Management</h3>
+            <p>Search and performance campaigns that reach people with meaningful intent.</p>
+            <a href="contact.html">Explore Google Ads ↗</a>
+          </article>
+          <article class="card service-card">
+            <div class="icon-square">M</div>
+            <h3>Facebook & Instagram Ads</h3>
+            <p>Creative testing, audiences and Meta campaign management built around your goals.</p>
+            <a href="contact.html">Explore Meta Ads ↗</a>
+          </article>
+          <article class="card service-card">
+            <div class="icon-square">T</div>
+            <h3>TikTok Ads Management</h3>
+            <p>Creative-led campaigns with a practical approach to attention and performance.</p>
+            <a href="contact.html">Explore TikTok Ads ↗</a>
+          </article>
+          <article class="card service-card">
+            <div class="icon-square">↗</div>
+            <h3>Performance Marketing Strategy</h3>
+            <p>Connect channels, budgets, audiences and outcomes in one considered plan.</p>
+            <a href="contact.html">Explore strategy ↗</a>
+          </article>
+        </div>
+      </div>
+
+      <div class="service-group">
+        <h3 class="group-title"><span>02 /</span> Search, social and content</h3>
+        <div class="grid">
+          <article class="card service-card">
+            <div class="icon-square">S</div>
+            <h3>SEO Services</h3>
+            <p>Technical foundations, useful content and on-page optimisation for relevant searches.</p>
+            <a href="contact.html">Explore SEO ↗</a>
+          </article>
+          <article class="card service-card">
+            <div class="icon-square">#</div>
+            <h3>Social Media Management</h3>
+            <p>Purposeful content planning, publishing and audience communication.</p>
+            <a href="contact.html">Explore social ↗</a>
+          </article>
+          <article class="card service-card">
+            <div class="icon-square">✦</div>
+            <h3>Content Creation & Graphic Design</h3>
+            <p>Brand-consistent visuals and messaging that communicate something useful.</p>
+            <a href="contact.html">Explore creative ↗</a>
+          </article>
+        </div>
+      </div>
+
+      <div class="service-group">
+        <h3 class="group-title"><span>03 /</span> Websites, branding and measurement</h3>
+        <div class="grid">
+          <article class="card service-card">
+            <div class="icon-square">&lt;/&gt;</div>
+            <h3>Website Design & Development</h3>
+            <p>Responsive websites with clear navigation, SEO basics and a better user experience.</p>
+            <a href="contact.html">Explore websites ↗</a>
+          </article>
+          <article class="card service-card">
+            <div class="icon-square">B</div>
+            <h3>Branding & Creative Strategy</h3>
+            <p>Recognisable visual identities, stronger positioning and connected communication.</p>
+            <a href="contact.html">Explore branding ↗</a>
+          </article>
+          <article class="card service-card">
+            <div class="icon-square">◎</div>
+            <h3>Analytics, Tracking & Reporting</h3>
+            <p>Practical measurement and reporting that turns data into better decisions.</p>
+            <a href="contact.html">Explore analytics ↗</a>
+          </article>
+        </div>
+      </div>
+
+      <div class="wide-note">
+        <p><strong>Not sure where to start?</strong> A focused discussion can help us identify which services match your business goals.</p>
+        <a class="btn light" href="contact.html">Discuss your priorities ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section mint" id="platforms">
+    <div class="wrap">
+      <div class="heading center">
+        <span class="eyebrow">Our platforms & expertise</span>
+        <h2>Tools, channels and skills behind our work.</h2>
+        <p>We use the right mix of advertising platforms, analytics and creative disciplines for each project.</p>
+      </div>
+      <div class="platform-grid">
+        <article class="platform">
+          <div class="platform-top">
+            <div class="platform-logo">Google<small>ADS</small></div>
+          </div>
+          <div class="platform-info">
+            <b>PAID SEARCH & PERFORMANCE</b>
             <h3>Google Ads</h3>
-            <p>
-              Reach people actively searching for your products or
-              services through carefully planned search and performance campaigns.
-            </p>
-            <a href="#contact" class="text-link">Discuss Google Ads ↗</a>
-          </article>
-
-          <article class="card">
-            <div class="card-icon">M</div>
+            <p>Campaign planning, search demand and optimisation.</p>
+          </div>
+        </article>
+        <article class="platform">
+          <div class="platform-top">
+            <div class="platform-logo">∞ Meta<small>ADVERTISING</small></div>
+          </div>
+          <div class="platform-info">
+            <b>SOCIAL ADVERTISING</b>
             <h3>Meta Ads</h3>
-            <p>
-              Connect with relevant audiences on Facebook and Instagram
-              through creative testing, audience strategy and optimisation.
-            </p>
-            <a href="#contact" class="text-link">Discuss Meta Ads ↗</a>
-          </article>
-
-          <article class="card">
-            <div class="card-icon">T</div>
+            <p>Facebook and Instagram audience and creative strategy.</p>
+          </div>
+        </article>
+        <article class="platform">
+          <div class="platform-top">
+            <div class="platform-logo">TikTok<small>PAID SOCIAL</small></div>
+          </div>
+          <div class="platform-info">
+            <b>CREATIVE-LED GROWTH</b>
             <h3>TikTok Ads</h3>
-            <p>
-              Bring your brand into the conversation with creative-led
-              campaigns and an approach that considers engagement and results.
-            </p>
-            <a href="#contact" class="text-link">Discuss TikTok Ads ↗</a>
-          </article>
-
-          <article class="card">
-            <div class="card-icon">↗</div>
-            <h3>Performance Marketing</h3>
-            <p>
-              Build a smarter media strategy by connecting your audience,
-              marketing budget, customer journey and commercial goals.
-            </p>
-            <a href="#contact" class="text-link">Explore Strategy ↗</a>
-          </article>
-
-          <article class="card">
-            <div class="card-icon">◎</div>
-            <h3>Analytics & Reporting</h3>
-            <p>
-              Understand what campaigns are delivering, where customers
-              come from and which metrics actually help your business.
-            </p>
-            <a href="#contact" class="text-link">Explore Analytics ↗</a>
-          </article>
-
-          <article class="card">
-            <div class="card-icon">C</div>
-            <h3>Conversion Thinking</h3>
-            <p>
-              Improve the journey from an ad click to a meaningful
-              enquiry, booking or action on your website.
-            </p>
-            <a href="#contact" class="text-link">Discuss Conversions ↗</a>
-          </article>
-
-        </div>
+            <p>Video-first campaign planning and testing.</p>
+          </div>
+        </article>
+        <article class="platform">
+          <div class="platform-top">
+            <div class="platform-logo">Analytics<small>MEASUREMENT</small></div>
+          </div>
+          <div class="platform-info">
+            <b>DATA & REPORTING</b>
+            <h3>Analytics</h3>
+            <p>Measurement, events and meaningful performance reports.</p>
+          </div>
+        </article>
+        <article class="platform">
+          <div class="platform-top">
+            <div class="platform-logo">SEO<small>ORGANIC SEARCH</small></div>
+          </div>
+          <div class="platform-info">
+            <b>SEARCH VISIBILITY</b>
+            <h3>SEO</h3>
+            <p>Content, technical health and search-intent mapping.</p>
+          </div>
+        </article>
+        <article class="platform">
+          <div class="platform-top">
+            <div class="platform-logo">Creative<small>BRAND & DIGITAL</small></div>
+          </div>
+          <div class="platform-info">
+            <b>CONTENT & EXPERIENCE</b>
+            <h3>Design & Websites</h3>
+            <p>Clear design, communication and user-friendly pages.</p>
+          </div>
+        </article>
       </div>
-    </section>
-
-    <!-- APPROACH -->
-    <section class="section blue-section" id="work">
-      <div class="container split">
-
-        <div>
-          <span class="eyebrow">THE ARAT DIFFERENCE</span>
-          <h2>Good marketing starts with better questions.</h2>
-          <p class="lead">
-            Before spending on advertising, we want to understand your
-            business, the people you want to reach and what success
-            actually means to you.
-          </p>
-          <p class="lead">
-            From there, every campaign should have a clear purpose,
-            a considered budget and a way to measure progress.
-          </p>
-          <a class="btn" href="#contact">Explore Working Together ↗</a>
-        </div>
-
-        <div class="soft-panel">
-          <h3>What matters to us.</h3>
-          <p>
-            Less guesswork. More clarity. Practical marketing built
-            around real business priorities.
-          </p>
-
-          <div class="check-row">✓ Strategy before spending</div>
-          <div class="check-row">✓ Relevant audience targeting</div>
-          <div class="check-row">✓ Creative testing and improvement</div>
-          <div class="check-row">✓ Clear performance measurement</div>
-          <div class="check-row">✓ Transparent communication</div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- PROCESS -->
-    <section class="section white" id="process">
-      <div class="container">
-
-        <div class="section-heading">
-          <span class="eyebrow">HOW WE WORK</span>
-          <h2>From the first conversation to your next opportunity.</h2>
-          <p>
-            A simple process keeps everyone aligned on the work,
-            the priorities and the progress.
-          </p>
-        </div>
-
-        <div class="grid-3">
-          <article class="card">
-            <div class="step-number">01 / DISCOVER</div>
-            <h3>Understand your business.</h3>
-            <p>
-              We discuss your customers, objectives, offer,
-              current marketing activity and biggest challenges.
-            </p>
-          </article>
-
-          <article class="card">
-            <div class="step-number">02 / BUILD</div>
-            <h3>Plan with purpose.</h3>
-            <p>
-              We identify opportunities, suitable channels,
-              campaign priorities and how progress will be measured.
-            </p>
-          </article>
-
-          <article class="card">
-            <div class="step-number">03 / IMPROVE</div>
-            <h3>Learn and optimise.</h3>
-            <p>
-              We use performance signals to evaluate what is working,
-              what needs attention and what to test next.
-            </p>
-          </article>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- FOUNDER -->
-    <section class="section" id="about">
-      <div class="container">
-
-        <div class="founder-box">
-          <span class="eyebrow">MEET THE FOUNDER</span>
-          <h2>Real experience. Personal accountability.</h2>
-
-          <p>
-            ARAT is founded by Yogesh Parajuli, a performance
-            marketer with experience working across Google Ads,
-            Meta Ads, TikTok Ads and digital campaign reporting.
-          </p>
-
-          <p>
-            With a background that includes marketing work for
-            London hospitality brands, the focus is on combining
-            practical platform knowledge with clearer business decisions.
-          </p>
-
-          <p>
-            ARAT brings that hands-on approach to businesses
-            looking for more thoughtful digital growth.
-          </p>
-
-          <a href="#contact" class="btn btn-outline">
-            Connect With ARAT ↗
-          </a>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="section white" id="faq">
-      <div class="container">
-
-        <div class="section-heading">
-          <span class="eyebrow">FREQUENTLY ASKED QUESTIONS</span>
-          <h2>Your questions, answered clearly.</h2>
-        </div>
-
-        <details class="faq">
-          <summary>What digital marketing services does ARAT focus on?</summary>
-          <p>
-            ARAT focuses on Google Ads, Meta Ads, TikTok Ads,
-            performance marketing strategy and marketing analytics.
-            The right service depends on your business needs.
-          </p>
-        </details>
-
-        <details class="faq">
-          <summary>Can ARAT work with international businesses?</summary>
-          <p>
-            ARAT is positioned for businesses in Nepal and beyond.
-            International project availability, requirements and
-            commercial terms should be agreed before starting.
-          </p>
-        </details>
-
-        <details class="faq">
-          <summary>Which advertising platform is best for my business?</summary>
-          <p>
-            That depends on your audience, offer and objectives.
-            Google Ads can capture existing search demand, while
-            Meta and TikTok can help reach and engage relevant audiences.
-          </p>
-        </details>
-
-        <details class="faq">
-          <summary>Can digital marketing guarantee sales or Google rankings?</summary>
-          <p>
-            No. Marketing results depend on competition, budgets,
-            the strength of your offer, website experience and
-            other business factors. ARAT prioritises realistic
-            expectations, testing and transparent reporting.
-          </p>
-        </details>
-
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="section" id="contact">
-      <div class="container">
-
-        <div class="cta">
-          <span class="eyebrow" style="color:#d6eaff">
-            LET'S BUILD SOMETHING BETTER
-          </span>
-
-          <h2>Ready to give your business a smarter way to grow?</h2>
-
-          <p>
-            Tell us about your goals, your challenges and where
-            you want to go next. Great work begins with a
-            meaningful conversation.
-          </p>
-
-          <p>
-            Contact details and the working enquiry form will
-            be connected before the website goes live.
-          </p>
-        </div>
-
-      </div>
-    </section>
-
-  </main>
-
-  <footer>
-    <div class="container">
-
-      <div class="footer-grid">
-        <div>
-          <a class="logo" href="#home">ARAT<span>.</span></a>
-          <p>
-            Digital marketing, performance advertising and smarter
-            growth strategies. Founded by Yogesh Parajuli in Nepal.
-          </p>
-        </div>
-
-        <nav class="footer-links" aria-label="Footer navigation">
-          <a href="#services">Services</a>
-          <a href="#work">Approach</a>
-          <a href="#about">Founder</a>
-          <a href="#faq">FAQs</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </div>
-
-      <div class="copyright">
-        © <span id="year">2026</span> ARAT.
-        All rights reserved. Founded by Yogesh Parajuli.
-      </div>
-
+      <p class="disclaimer">These cards show service capabilities. They do not claim official platform certification, partner status or third-party endorsement.</p>
     </div>
-  </footer>
+  </section>
 
-  <script>
-    const menuButton = document.getElementById("menuButton");
-    const navigation = document.getElementById("navigation");
+  <section class="section white" id="difference">
+    <div class="wrap split">
+      <div>
+        <span class="eyebrow">Why ARAT</span>
+        <h2>Clear thinking. Creative execution. No unnecessary noise.</h2>
+        <p>Good digital marketing needs more than a good-looking ad. It needs an understanding of your audience, a useful experience after the click and transparent measurement.</p>
+        <p>We bring those pieces together around your business priorities.</p>
+        <a class="btn" href="contact.html">Let's plan your next step ↗</a>
+      </div>
+      <div class="list">
+        <div class="list-item">
+          <strong>✓ Start with your business</strong>
+          <p>Your customers, market and objectives shape the strategy.</p>
+        </div>
+        <div class="list-item">
+          <strong>✓ Make creativity practical</strong>
+          <p>Design and messaging should help people understand and act.</p>
+        </div>
+        <div class="list-item">
+          <strong>✓ Measure what matters</strong>
+          <p>We distinguish platform activity from business outcomes.</p>
+        </div>
+        <div class="list-item">
+          <strong>✓ Keep learning and improving</strong>
+          <p>Testing and honest reporting inform the next decision.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    menuButton.addEventListener("click", () => {
-      const isOpen = navigation.classList.toggle("open");
+  <section class="section sky" id="work">
+    <div class="wrap">
+      <div class="heading">
+        <span class="eyebrow">Relevant experience</span>
+        <h2>Marketing informed by real-world campaigns.</h2>
+        <p>ARAT is a new brand built around the founder's existing professional experience — not an invented agency track record.</p>
+      </div>
+      <div class="case">
+        <div>
+          <span class="eyebrow">Founder experience / London hospitality</span>
+          <h3>Where campaigns meet customer decisions.</h3>
+          <p>Experience with paid advertising, creative coordination and reporting for London hospitality brands informs our approach to visibility, intent, bookings and performance measurement.</p>
+          <a class="btn light" href="portfolio.html">Explore existing work ↗</a>
+        </div>
+        <ul>
+          <li>Google, Meta and TikTok campaign thinking</li>
+          <li>Creative testing and content coordination</li>
+          <li>Performance reporting with commercial context</li>
+          <li>Customer journeys and conversion signals</li>
+        </ul>
+      </div>
+      <p class="disclaimer">Founder professional experience is not presented as an independent ARAT client testimonial.</p>
+    </div>
+  </section>
 
-      menuButton.setAttribute("aria-expanded", String(isOpen));
-      menuButton.setAttribute(
-        "aria-label",
-        isOpen ? "Close menu" : "Open menu"
-      );
-    });
+  <section class="section warm" id="industries">
+    <div class="wrap split">
+      <div>
+        <span class="eyebrow">Who we work with</span>
+        <h2>Different industries. Thoughtful solutions.</h2>
+        <p>Every business has its own challenges, from growing awareness to generating quality enquiries or improving the experience after a click.</p>
+        <p>We begin with your objectives and assess which skills and channels are the right fit.</p>
+      </div>
+      <div class="tags">
+        <span>Hospitality & restaurants</span>
+        <span>Local businesses</span>
+        <span>Retail & e-commerce</span>
+        <span>Professional services</span>
+        <span>Education & training</span>
+        <span>Growing digital brands</span>
+      </div>
+    </div>
+  </section>
 
-    navigation.querySelectorAll("a").forEach(link => {
-      link.addEventListener("click", () => {
-        navigation.classList.remove("open");
-        menuButton.setAttribute("aria-expanded", "false");
-        menuButton.setAttribute("aria-label", "Open menu");
-      });
-    });
+  <section class="section sky" id="process">
+    <div class="wrap">
+      <div class="heading">
+        <span class="eyebrow">How we work</span>
+        <h2>A process you can understand.</h2>
+        <p>Clear stages help us connect strategy, delivery and useful reporting.</p>
+      </div>
+      <div class="steps">
+        <article class="step">
+          <div class="number">01 / DISCOVER</div>
+          <h3>Understand</h3>
+          <p>Learn about your audience, offer, goals and current activity.</p>
+        </article>
+        <article class="step">
+          <div class="number">02 / PLAN</div>
+          <h3>Prioritise</h3>
+          <p>Choose channels, creative direction and measurable objectives.</p>
+        </article>
+        <article class="step">
+          <div class="number">03 / BUILD</div>
+          <h3>Execute</h3>
+          <p>Develop campaigns, content or digital experiences with purpose.</p>
+        </article>
+        <article class="step">
+          <div class="number">04 / IMPROVE</div>
+          <h3>Optimise</h3>
+          <p>Review results and decide what to adjust or test next.</p>
+        </article>
+      </div>
+    </div>
+  </section>
 
-    document.getElementById("year").textContent =
-      new Date().getFullYear();
-  </script>
+  <section class="section white" id="about">
+    <div class="wrap">
+      <div class="founder">
+        <div class="monogram" aria-label="Initials YP">YP.</div>
+        <div>
+          <span class="eyebrow">Meet the founder</span>
+          <h2>Yogesh Parajuli.</h2>
+          <p>ARAT is a founder-led digital marketing agency bringing together practical platform knowledge, creative thinking and performance reporting.</p>
+          <p>Yogesh's professional background includes Google Ads, Meta Ads, TikTok Ads and performance analysis for London hospitality brands. ARAT brings that hands-on perspective to businesses in Nepal and beyond.</p>
+          <a class="btn light" href="about.html">Meet the founder ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section warm" id="insights">
+    <div class="wrap">
+      <div class="heading">
+        <span class="eyebrow">Ideas worth sharing</span>
+        <h2>Useful marketing thinking. Less jargon.</h2>
+        <p>We believe better decisions come from understanding why something works, not just reading the numbers.</p>
+      </div>
+      <div class="grid">
+        <article class="card blue">
+          <span class="eyebrow">Paid advertising</span>
+          <h3>Google Ads or Meta Ads?</h3>
+          <p>Start with your customer and their intent, not the trendiest platform.</p>
+        </article>
+        <article class="card mint">
+          <span class="eyebrow">Website experience</span>
+          <h3>What happens after the click?</h3>
+          <p>Clearer landing pages can reduce friction between attention and action.</p>
+        </article>
+        <article class="card peach">
+          <span class="eyebrow">Measurement</span>
+          <h3>Which metrics matter most?</h3>
+          <p>Clicks and reach give context; meaningful outcomes tell a fuller story.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section white" id="faq">
+    <div class="wrap">
+      <div class="heading center">
+        <span class="eyebrow">Frequently asked questions</span>
+        <h2>A few useful answers before we begin.</h2>
+      </div>
+      <details class="faq">
+        <summary>What digital marketing services does ARAT provide?</summary>
+        <p>ARAT provides Google Ads, Facebook and Instagram Ads, TikTok Ads, SEO, social media management, graphic design and content creation, website design and development, branding, performance strategy, and analytics and reporting. Scope is agreed for each project.</p>
+      </details>
+      <details class="faq">
+        <summary>Is ARAT a digital marketing agency in Nepal?</summary>
+        <p>Yes. ARAT is a Nepal-based, founder-led digital marketing brand created by Yogesh Parajuli.</p>
+      </details>
+      <details class="faq">
+        <summary>Can ARAT work with businesses outside Nepal?</summary>
+        <p>International enquiries are welcome. We review market requirements, project scope and availability before committing to work.</p>
+      </details>
+      <details class="faq">
+        <summary>Should I focus on SEO or paid advertising first?</summary>
+        <p>Paid ads can help reach relevant audiences sooner, while SEO supports discoverability over time. The right combination depends on budget, search demand, competition, existing website quality and goals.</p>
+      </details>
+      <details class="faq">
+        <summary>How is campaign performance measured?</summary>
+        <p>We consider the goal of each campaign, such as qualified enquiries, bookings or purchases, alongside cost, engagement and other supporting indicators. Platform-reported results are not automatically treated as confirmed business revenue.</p>
+      </details>
+      <details class="faq">
+        <summary>Can you guarantee first position on Google?</summary>
+        <p>No agency can responsibly guarantee a number-one organic search ranking. We focus on relevant content, sound technical SEO, user experience and sustained improvement.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="section warm" id="contact">
+    <div class="wrap">
+      <div class="cta">
+        <div>
+          <span class="eyebrow" style="color:#e3f2ff">Let's talk about your goals</span>
+          <h2>Ready for your next move?</h2>
+          <p>Tell us what your business needs. We'll start with a practical conversation about goals, opportunities and the right approach.</p>
+        </div>
+        <a class="btn" href="contact.html">Discuss your project ↗</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a href="#home" class="logo">
+          <span class="mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>ARAT<b>.</b>
+        </a>
+        <p>Digital marketing, creative services and digital experiences for businesses in Nepal and beyond. Founded by Yogesh Parajuli.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <a href="#services">Services</a>
+        <a href="#platforms">Expertise</a>
+        <a href="#work">Our work</a>
+        <a href="#about">Founder</a>
+        <a href="#faq">FAQs</a>
+      </div>
+      <div>
+        <h3>Connect</h3>
+        <a href="contact.html">Contact ARAT</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="insights.html">Insights</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      © <span id="year">2026</span> ARAT. All rights reserved. · Made with purpose in Nepal.
+    </div>
+  </div>
+</footer>
+
+<script>
+  const menu = document.getElementById('menuButton');
+  const mobile = document.getElementById('mobileNav');
+
+  menu.addEventListener('click', () => {
+    const opened = mobile.classList.toggle('open');
+    menu.setAttribute('aria-expanded', String(opened));
+    menu.setAttribute('aria-label', opened ? 'Close menu' : 'Open menu');
+  });
+
+  mobile.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    mobile.classList.remove('open');
+    menu.setAttribute('aria-expanded','false');
+  }));
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
