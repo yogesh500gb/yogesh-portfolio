@@ -1,0 +1,14 @@
+ARAT WEBSITE - GITHUB UPLOAD (SHORT GUIDE)
+
+First test the arat-redesign branch. Do NOT replace your live main branch yet.
+
+1. Download ARAT_Final_Premium_Website_GitHub_Ready.zip from ChatGPT.
+2. Extract it on your computer. Open the extracted folder.
+3. On GitHub go to: github.com/yogesh500gb/yogesh-portfolio/tree/arat-redesign
+4. In that branch choose Add file > Upload files. Drag all CONTENTS of the extracted folder including assets/ and downloads/ and existing .html files.
+5. Check GitHub upload preview and commit ONLY to arat-redesign. Do not change main.
+6. Preview and test the branch before merging to main.
+
+Before publishing verify the inherited founder email (yogeshparajuly@gmail.com), phone (+977 9844430480), client approval for screenshots, business map pin and any privacy obligations. The contact form opens WhatsApp; it does not automatically send data.
+
+When ready, you can ask ChatGPT to guide you with one small GitHub step at a time.
