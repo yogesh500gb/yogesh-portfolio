@@ -1,0 +1,2 @@
+Week starting,Channel,Campaign,Spend,Impressions,Link clicks,CTR,CPC,Leads,Cost per lead,Confirmed sales or bookings,Notes and next action
+Example only,Google Ads,Search - service,10000,45000,900,"=IFERROR(F2/E2,0)","=IFERROR(D2/F2,0)",12,"=IFERROR(D2/I2,0)",Not verified,Review search intent and form tracking
