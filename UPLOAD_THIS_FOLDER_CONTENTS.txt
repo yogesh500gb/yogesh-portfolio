@@ -1,0 +1,1 @@
+Upload the CONTENTS of this extracted folder to the root of your arat-redesign GitHub branch. Do not upload the ZIP file itself. Files with the same names replace the old versions. The other site files already on the branch are preserved. This is the smaller changes-only package; the full package is also supplied.

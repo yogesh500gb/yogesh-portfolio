@@ -33,3 +33,14 @@ To keep main live unaffected, first upload to arat-redesign and check the branch
 Only then merge/publish to main.
 
 Content is original to ARAT and inspired by user-supplied site UX references, not copied.
+
+
+2026-11-04 VISUAL AND CONTENT UPDATE
+- Six premium universal visuals added to assets/creative-*.webp. These are conceptual educational artwork, not screenshots of client work.
+- Card artwork shows example data. Do not advertise it as real revenue, results, rankings or verified platform partner status.
+- Problem-first, plain-English copy has been added across homepage, service pages, Nepal page, about and contact.
+- Added practical, short questions to service FAQs and homepage FAQ structured data.
+- Did not invent 99% performance rate or a Google ranking guarantee.
+- Do not move the verified Cloth Hub (Jhapa) Google Business Profile to ARAT/Kathmandu unless the same real business has legitimately relocated.
+- Website Google map remains an AREA-LEVEL pointer until ARAT has a verified, eligible business location.
+- Before live launch, confirm email address, ownership/permission for historical screenshots, mobile nav, contact links and domain HTTPS.
